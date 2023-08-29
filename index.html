@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <form action="submit" class="form" id="form" novalidate>
+        <label for="email">Email: </label>
+        <input type="email" class="email" id="email" name="email" required>
+        <p id="email-error" class="error"></p>
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="none" style="display: none;">Select One</option>
+            <option value="au">Australia</option>
+            <option value="ca">Canada</option>
+            <option value="hk">Hong Kong</option>
+            <option value="es">Spain</option>
+            <option value="us">United States</option>
+        </select>
+        <p id="country-error" class="error"></p>
+        <label for="zip-code">Zip Code:</label>
+        <input type="text" name="zip-code" id="zip-code" minlength="0" maxlength="1">
+        <p id="zip-error" class="error"></p>      
+        <label for="password">Password:</label>
+        <input type="text" id="password" class="password" name="password">
+        <p id="password-error" class="error"></p>
+        <label for="password-confirm">Repeat Password</label>
+        <input type="text" id="password-confirm" name="password-confirm">
+        <p id="password-confirm-error" class="error"></p>
+        <button id="submit">Submit:</button>
+    </form>
+</body>
+</html>
